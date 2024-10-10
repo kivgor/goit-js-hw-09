@@ -37,8 +37,8 @@ form.addEventListener('submit', event => {
   } else {
     console.log(formData);
     localStorage.removeItem(localStorageKey);
+    formData.email = '';
+    formData.message = '';
     form.reset();
-    // formData.email = '';
-    // formData.message = '';
   }
 });
