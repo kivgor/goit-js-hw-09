@@ -11,8 +11,94 @@
 @import url('./animations.css');
 
 /* Sections style */
-@import url('./header.css');
+/* @import url('./header.css');
 @import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+@import url('./footer.css'); */
+
+/*? ----------- 1-gallery ----------- */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  min-height: 240px;
+}
+
+.gallery-image {
+  width: 360px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+
+.simple-lightbox {
+  background: rgba(46, 47, 66, 0.8);
+}
+
+/*? ----------- 2-form ----------- */
+.feedback-form {
+  margin-top: 24px;
+}
+
+.block {
+  display: block;
+}
+
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.box {
+  width: 360px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  outline: none;
+  padding: 8px 16px;
+}
+
+.box:hover,
+.box:focus {
+  border: 1px solid #000;
+}
+
+.box:active {
+  border: 1px solid #808080;
+}
+
+.textarea {
+  height: 80px;
+  resize: none;
+}
+
+.blue-button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  border-radius: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 16px;
+  
+}
+
+.blue-button:hover,
+.blue-button:focus {
+  background-color: #6c8cff;
+}
